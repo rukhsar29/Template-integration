@@ -1,0 +1,9 @@
+C:\Users\Mohit\source\repos\FolderProject\Books.DTO\bin\Debug\netcoreapp3.1\Books.DTO.deps.json
+C:\Users\Mohit\source\repos\FolderProject\Books.DTO\bin\Debug\netcoreapp3.1\Books.DTO.dll
+C:\Users\Mohit\source\repos\FolderProject\Books.DTO\bin\Debug\netcoreapp3.1\Books.DTO.pdb
+C:\Users\Mohit\source\repos\FolderProject\Books.DTO\obj\Debug\netcoreapp3.1\Books.DTO.csprojAssemblyReference.cache
+C:\Users\Mohit\source\repos\FolderProject\Books.DTO\obj\Debug\netcoreapp3.1\Books.DTO.AssemblyInfoInputs.cache
+C:\Users\Mohit\source\repos\FolderProject\Books.DTO\obj\Debug\netcoreapp3.1\Books.DTO.AssemblyInfo.cs
+C:\Users\Mohit\source\repos\FolderProject\Books.DTO\obj\Debug\netcoreapp3.1\Books.DTO.csproj.CoreCompileInputs.cache
+C:\Users\Mohit\source\repos\FolderProject\Books.DTO\obj\Debug\netcoreapp3.1\Books.DTO.dll
+C:\Users\Mohit\source\repos\FolderProject\Books.DTO\obj\Debug\netcoreapp3.1\Books.DTO.pdb

@@ -1,0 +1,160 @@
+﻿
+@{
+    Layout = "~/Views/Home/Layout.cshtml";
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+    @*<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/lib/datatables/css/dataTables.bootstrap4.css" rel="stylesheet" />*@
+</head>
+<body>
+    <div class="container-fluid">
+
+        <div class="row">
+           
+
+            <div class="col-lg-8 col-xlg-10 col-md-7">
+                <div class="card">
+                    <div class="container py-4">
+                        <h3 class="text-center text-uppercase">Users</h3><br />
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addUser">
+                            Add User
+                        </button>
+                        <hr />
+                        <div id="dataTable_wrapper"></div>
+                        <table id="dataTable" class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>UserId</th>
+                                    <th>FullName</th>
+                                    <th>UserEmail</th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+
+                        </table>
+
+                    </div>
+                    <div class="modal fade" id="addUser" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Add/Edit Book Details</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <form id="AddUser" method="post" enctype="multipart/form-data">
+
+                                                <div class="form-group">
+
+                                                    <label>Name</label>
+                                                    <input class="form-control" id="Name" name="AName" type="text" />
+                                                    <span id="nameval" class="field-validation-error"></span>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label>Email</label>
+                                                    <input class="form-control" id="Email" name="ALat" type="text" />
+                                                    <span id="latval" class="field-validation-error"></span>
+                                                </div>
+
+                                                <input type="hidden" id="action" name="action" />
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn btn-primary" id="btnSave" onclick="return InsertUser();">Submit</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="editUser" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Add/Edit Book Details</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            @*<form id="EditUser" method="post" enctype="multipart/form-data">*@
+                                            <div class="form-group">
+
+                                                <label>Id</label>
+                                                <input class="form-control" id="gid1" name="gid1" type="text" />
+                                                <span id="gidval" class="field-validation-error"></span>
+                                            </div>
+                                            <div class="form-group">
+
+                                                <label>Name</label>
+                                                <input class="form-control" id="name1" name="AName1" type="text" />
+                                                <span id="nameval" class="field-validation-error"></span>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label>Email</label>
+                                                <input class="form-control" id="email1" name="ALat1" type="text" />
+                                                <span id="latval" class="field-validation-error"></span>
+                                            </div>
+
+                                            <input type="hidden" id="action1" name="action1" />
+                                            @*</form>*@
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn btn-primary" id="btnEdit" onclick="return EditUser1();">Submit</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+</div>
+
+
+</body>
+</html>
+
+@*<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="~/lib/datatables/js/jquery.dataTables.min.js"></script>
+<script src="~/lib/datatables/js/dataTables.bootstrap4.min.js"></script>
+<script src="~/UserScripts/Add.js"></script>
+<script src="~/UserScripts/delete.js"></script>
+<script src="~/UserScripts/Edit.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        debugger;
+        $('#dataTable').DataTable({
+            "ajax": {
+                url: '/Home/GetAllUser',
+                "type": "GET",
+                "datatype": "json"
+
+            },
+
+            "columns": [
+                { "data": "userId" },
+                { "data": "fullName" },
+                { "data": "userEmail" },
+                { 'data': null, title: 'Action', wrap: true, "render": function (data) { return '<div class="btn-group"> <button type="button" onclick="DeleteUser(' + data.userId + ')" value="0" class="btn btn-info" >Delete</button></div>' } },
+                { 'data': null, title: 'Action', wrap: true, "render": function (data) { return '<div class="btn-group"> <button type="button" onclick="EditUserDetails(' + data.userId + ')"  class="btn btn-info" data-toggle="modal" data-target="#editUser">Edit</button></div>' } },
+            ]
+        });
+    });
+
+
+</script>*@

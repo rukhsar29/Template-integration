@@ -1,0 +1,9 @@
+C:\Users\Mohit\source\repos\FolderProject\Book.Entities\bin\Debug\netcoreapp3.1\Book.Entities.deps.json
+C:\Users\Mohit\source\repos\FolderProject\Book.Entities\bin\Debug\netcoreapp3.1\Book.Entities.dll
+C:\Users\Mohit\source\repos\FolderProject\Book.Entities\bin\Debug\netcoreapp3.1\Book.Entities.pdb
+C:\Users\Mohit\source\repos\FolderProject\Book.Entities\obj\Debug\netcoreapp3.1\Book.Entities.csprojAssemblyReference.cache
+C:\Users\Mohit\source\repos\FolderProject\Book.Entities\obj\Debug\netcoreapp3.1\Book.Entities.AssemblyInfoInputs.cache
+C:\Users\Mohit\source\repos\FolderProject\Book.Entities\obj\Debug\netcoreapp3.1\Book.Entities.AssemblyInfo.cs
+C:\Users\Mohit\source\repos\FolderProject\Book.Entities\obj\Debug\netcoreapp3.1\Book.Entities.dll
+C:\Users\Mohit\source\repos\FolderProject\Book.Entities\obj\Debug\netcoreapp3.1\Book.Entities.pdb
+C:\Users\Mohit\source\repos\FolderProject\Book.Entities\obj\Debug\netcoreapp3.1\Book.Entities.csproj.CoreCompileInputs.cache

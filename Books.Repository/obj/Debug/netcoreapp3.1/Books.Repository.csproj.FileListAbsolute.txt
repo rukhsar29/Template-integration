@@ -1,0 +1,14 @@
+C:\Users\Mohit\source\repos\FolderProject\Books.Repository\bin\Debug\netcoreapp3.1\Books.Repository.deps.json
+C:\Users\Mohit\source\repos\FolderProject\Books.Repository\bin\Debug\netcoreapp3.1\Books.Repository.dll
+C:\Users\Mohit\source\repos\FolderProject\Books.Repository\bin\Debug\netcoreapp3.1\Books.Repository.pdb
+C:\Users\Mohit\source\repos\FolderProject\Books.Repository\obj\Debug\netcoreapp3.1\Books.Repository.csprojAssemblyReference.cache
+C:\Users\Mohit\source\repos\FolderProject\Books.Repository\obj\Debug\netcoreapp3.1\Books.Repository.AssemblyInfoInputs.cache
+C:\Users\Mohit\source\repos\FolderProject\Books.Repository\obj\Debug\netcoreapp3.1\Books.Repository.AssemblyInfo.cs
+C:\Users\Mohit\source\repos\FolderProject\Books.Repository\obj\Debug\netcoreapp3.1\Books.Repository.csproj.CoreCompileInputs.cache
+C:\Users\Mohit\source\repos\FolderProject\Books.Repository\obj\Debug\netcoreapp3.1\Books.Repository.dll
+C:\Users\Mohit\source\repos\FolderProject\Books.Repository\obj\Debug\netcoreapp3.1\Books.Repository.pdb
+C:\Users\Mohit\source\repos\FolderProject\Books.Repository\bin\Debug\netcoreapp3.1\Book.Entities.dll
+C:\Users\Mohit\source\repos\FolderProject\Books.Repository\bin\Debug\netcoreapp3.1\Books.DTO.dll
+C:\Users\Mohit\source\repos\FolderProject\Books.Repository\bin\Debug\netcoreapp3.1\Book.Entities.pdb
+C:\Users\Mohit\source\repos\FolderProject\Books.Repository\bin\Debug\netcoreapp3.1\Books.DTO.pdb
+C:\Users\Mohit\source\repos\FolderProject\Books.Repository\obj\Debug\netcoreapp3.1\Books.Repository.csproj.CopyComplete
